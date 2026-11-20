@@ -1,0 +1,25 @@
+/* Before the Ships additions */
+img{max-width:100%;height:auto}
+.exhibit{background:#fffdf7;border:1px solid #c9b48a;border-left:6px solid #a8833f;border-radius:6px;padding:16px 18px;margin:1.2em 0;box-shadow:0 2px 0 #e3d2b4}
+.exhibit .kick{font:700 .78rem system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#7a5b2e;margin:0 0 .4em}
+.exhibit blockquote{margin:0;font-size:1.02rem;line-height:1.6}
+.exhibit.plate blockquote{font-family:"Courier New",monospace;font-size:.95rem;letter-spacing:.02em}
+.exhibit .src{margin:.7em 0 0}
+.zoom{display:block;width:100%;margin:1em 0 .3em;padding:0;border:0;background:none;cursor:zoom-in}
+.zoom img{display:block;margin:0 auto;max-width:100%;max-height:70vh;width:auto;object-fit:contain;border:1px solid #3a2a1c;background:#fff}
+.zoom-hint{font:600 .8rem system-ui,sans-serif;color:#7a5b2e;text-align:center;margin:.1em 0 .4em}
+.witness figure img{object-fit:contain!important;background:#f7efe2}
+.case-head{margin-top:2.2em;padding:.6em .8em;background:#efe2c4;border-radius:6px;font:700 1rem system-ui,sans-serif;color:#4a2e1b}
+.case-head small{display:block;font-weight:400;color:#6b5e52}
+.draft{display:inline-block;font:700 .72rem system-ui,sans-serif;letter-spacing:.06em;color:#fff;background:#9a3b1d;border-radius:3px;padding:2px 7px;margin:.2em 0 .6em}
+.qr-end{text-align:center;margin:2em 0}
+.qr-end img{width:min(80vw,420px);height:auto}
+.lightbox{position:fixed;inset:0;background:#1d1610ee;z-index:50;display:flex;align-items:center;justify-content:center}
+.lightbox[hidden]{display:none}
+.lightbox-stage{max-width:96vw;max-height:92vh;overflow:auto;touch-action:pinch-zoom pan-x pan-y;-webkit-overflow-scrolling:touch}
+.lightbox-stage img{max-width:96vw!important;max-height:88vh!important;object-fit:contain}
+.lightbox-close{position:fixed;top:10px;right:10px;font:700 1rem system-ui,sans-serif;padding:10px 14px;border-radius:6px;border:0;background:#fff;cursor:pointer}
+@media (max-width:640px){body{font-size:18px}.wrap{padding:0 16px}}
+.lightbox-stage{width:auto;padding:0;background:none}
+.lightbox-stage img{width:96vw;height:auto;max-height:86vh;object-fit:contain;border:0}
+.lightbox-close{width:auto;white-space:nowrap;z-index:51}
