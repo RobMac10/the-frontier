@@ -286,3 +286,7 @@ body:not(.book-page) .post{width:100%;max-width:28rem;margin:0 auto}
   body:not(.book-page) .copy .body{font-size:14.5px}
   body:not(.book-page) .notes{font-size:1.05rem}
 }
+
+/* Short Book One link, in place of the old Deep Time tab. */
+.book-one-link{margin:.85rem auto 1.1rem;max-width:36rem;font-size:1.05rem;line-height:1.55;color:#3d332d}
+.book-one-link a{color:#7c2938;text-underline-offset:4px}
