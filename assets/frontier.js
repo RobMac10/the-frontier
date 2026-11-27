@@ -12,7 +12,7 @@
     if (window.L) {
       m = L.map(box.querySelector('.map'), { scrollWheelZoom: false, tap: true, zoomSnap: 0.25 });
       L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors' }).addTo(m);
-      m.fitBounds([[-43.5, 114], [-23, 154]], { padding: [10, 10] });
+      m.fitBounds([[-43.5, 114], [-10.5, 154]], { padding: [10, 10] });
     } else { box.querySelector('.map').innerHTML = '<p class="note">The map could not load. The places are listed below.</p>'; }
     pts.forEach(function (p, k) {
       var html = '<p class="stop-date">' + esc(p.date) + ' · ' + esc((F.types || {})[p.t] || '') + '</p><h4>' + esc(p.name) + '</h4><p>' + esc(p.text) + '</p><p class="src">Source. ' + esc(p.src) + link(p.url) + '</p>';
@@ -44,10 +44,10 @@
       play.textContent = '❚❚ Pause';
       timer = setInterval(function () { var v = Number(range.value) + 1; range.value = v; update(); if (v >= Number(range.max)) stop(); }, 450);
     });
-    all.addEventListener('click', function () { stop(); range.value = range.max; update(); if (m) m.fitBounds([[-43.5, 114], [-23, 154]], { padding: [10, 10] }); });
+    all.addEventListener('click', function () { stop(); range.value = range.max; update(); if (m) m.fitBounds([[-43.5, 114], [-10.5, 154]], { padding: [10, 10] }); });
     range.addEventListener('input', function () { stop(); update(); });
     update();
-    if (m) setTimeout(function () { m.invalidateSize(); m.fitBounds([[-43.5, 114], [-23, 154]], { padding: [10, 10] }); }, 60);
+    if (m) setTimeout(function () { m.invalidateSize(); m.fitBounds([[-43.5, 114], [-10.5, 154]], { padding: [10, 10] }); }, 60);
   }
   // ---------- Reveal the record ----------
   [].forEach.call(document.querySelectorAll('.pair .reveal'), function (b) {
